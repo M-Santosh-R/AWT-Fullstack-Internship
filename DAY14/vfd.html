@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "green");
+  });
+  $("#TxtTestFocus").focus(function(){
+                $(this).css("background-color","red");
+  });
+});
+</script>
+</head>
+<body>
+    <input type="text" id="#TxtTestFocus" placeholder="Check Text Box Focus Event"/><hr/>
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
+</body>
+</html>
